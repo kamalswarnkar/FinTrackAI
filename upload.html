@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinTrackAI - Upload</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+  <header>
+    <h1>FinTrackAI</h1>
+    <nav>
+      <a href="dasboard.html" target="_blank">Dashboard</a>
+      <a href="upload.html">Upload</a>
+      <a href="contact.html" target="_blank">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Upload Data</h2>
+    <form class="upload-form" id="uploadForm">
+      <input type="file" id="fileInput" required>
+      <button type="submit" id="uploadBtn">Upload</button>
+    </form>
+    <div id="uploadSuccess" class="success-message" style="display: none;">
+        File uploaded successfully! ✅
+    </div>
+  </main>
+  <script src="upload.js" defer></script>
+</body>
+</html>
