@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinTrackAI - Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>FinTrackAI</h1>
+    <nav>
+      <a href="dasboard.html">Dashboard</a>
+      <a href="upload.html" target="_blank">Upload</a>
+      <a href="contact.html" target="_blank">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Financial Dashboard</h2>
+    <p>Your complete financial overview for July</p>
+
+    <section class="cards">
+      <div class="card"><h3>Total Spending</h3><p id="totalSpending">₹671.1</p></div>
+      <div class="card"><h3>Total Savings</h3><p id="totalSavings">₹12,340</p></div>
+      <div class="card"><h3>Top Category</h3><p id="topCategory">Food & Dining</p></div>
+      <div class="card"><h3>This Month</h3><p id="transactionCount">10 Transactions</p></div>
+    </section>
+
+    <section class="chart-section">
+      <div class="chart"><h3>Spending Trend</h3><div class="placeholder">[Graph]</div></div>
+      <div class="category"><h3>Category Breakdown</h3><div class="placeholder">[Pie Chart]</div></div>
+    </section>
+
+    <section class="transactions">
+      <h3>Recent Transactions</h3>
+      <ul id="transactionList">
+        <li><span>01/12/2024</span><span>₹-45.67</span></li>
+        <li><span>02/12/2024</span><span>₹-89.99</span></li>
+        <li><span>03/12/2024</span><span>₹2,500</span></li>
+        <li><span>04/12/2024</span><span>₹-125.5</span></li>
+        <li><span>05/12/2024</span><span>₹-39.99</span></li>
+      </ul>
+      <button id="addTransactionBtn">Add Random Transaction</button>
+    </section>
+  </main>
+  <script src="dashboard.js" defer></script>
+</body>
+</html>
